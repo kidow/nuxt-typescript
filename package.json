@@ -5,16 +5,23 @@
   "author": "kidow",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxt/types": "^0.6.1",
+    "@nuxt/typescript-runtime": "^0.3.8",
+    "@nuxt/vue-app": "^2.11.0",
+    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@types/node": "^13.7.0",
+    "axios": "^0.19.2",
     "element-ui": "^2.4.11",
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.6"
+  }
 }
