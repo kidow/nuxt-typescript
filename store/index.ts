@@ -13,11 +13,15 @@ export const getters: GetterTree<RootState, RootState> = {
 }
 
 export const mutations: MutationTree<RootState> = {
-  CHANGE_NAME: (state, newName: string) => (state.name = newName)
+  CHANGE_NAME(state, newName: string) {
+    state.name = newName
+  }
 }
 
 interface Actions<S, R> extends ActionTree<S, R> {
   nuxtServerInit(actionContext: ActionContext<S, R>, appContext: Context): void
 }
 
-export const actions: ActionTree<RootState, RootState> = {}
+export const actions: Actions<RootState, RootState> = {
+  nuxtServerInit({ commit }, { req }) {}
+}

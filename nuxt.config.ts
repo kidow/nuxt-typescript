@@ -23,7 +23,7 @@ const config: Configuration = {
   axios: {},
   build: {
     transpile: [/^element-ui/],
-    extend(config, ctx) {}
+    extend() {}
   },
   typescript: {
     typeCheck: true,
