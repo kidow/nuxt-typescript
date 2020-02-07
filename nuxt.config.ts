@@ -17,11 +17,7 @@ const config: Configuration = {
   },
   loading: { color: '#fff' },
   css: ['element-ui/lib/theme-chalk/index.css'],
-  plugins: [
-    '@/plugins/element-ui.ts',
-    '@/plugins/axios.ts',
-    '@/plugins/myInjectedFunction.ts'
-  ],
+  plugins: ['@/plugins/element-ui.ts', '@/plugins/axios.ts'],
   buildModules: ['@nuxt/typescript-build'],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
   axios: {},
