@@ -23,5 +23,8 @@ interface Actions<S, R> extends ActionTree<S, R> {
 }
 
 export const actions: Actions<RootState, RootState> = {
-  nuxtServerInit({ commit }, { req }) {}
+  nuxtServerInit({ commit }, { req }) {},
+  fetchThings({ commit }) {
+    commit('CHANGE_NAME', 'New name')
+  }
 }

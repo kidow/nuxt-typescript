@@ -24,10 +24,6 @@ const config: Configuration = {
   build: {
     transpile: [/^element-ui/],
     extend() {}
-  },
-  typescript: {
-    typeCheck: true,
-    ignoreNotFoundWarnings: true
   }
 }
 
